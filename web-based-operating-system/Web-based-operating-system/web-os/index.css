@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.taskbar {
+position: fixed !important;
+bottom: 0 !important;
+width: 100% !important;
+height: 3rem !important;
+z-index: 1000 !important;
+}
+
+#screen-root {
+overflow: hidden !important;
+}
+
+.desktop-icon {
+width: 3rem;
+height: 3rem;
+}
+
+.window-title {
+font-size: 0.875rem;
+}
+
+.overlay-menu {
+z-index: 9999 !important;
+position: fixed !important;
+}
+
+.overlay-backdrop {
+z-index: 9998 !important;
+position: fixed !important;
+}
+
+.fs-access-supported::before {
+content: "✓ ";
+color: #10b981;
+}
+
+.fs-access-not-supported::before {
+content: "⚠ ";
+color: #f59e0b;
+}
